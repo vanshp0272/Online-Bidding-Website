@@ -8,12 +8,12 @@ router.get("/", async (req, res) => {
       const auctions = await Auction.find({auctionStarted : false}).limit(4);
       var length=auctions.length;
       const productIds=[];
-      for(var i=length-1;i>=0;i--){
+      for(var i=length-1;i>=0;i--) {
         productIds.push(auctions[i].product);
       }
       const products=await Product.find({_id : productIds});
       var responseData=[];
-      for(var i=length-1;i>=0;i--){
+      for(var i=products.length-1;i>=0;i--) {
         var productDetails = {}; // this will hold a single object
         productDetails.SNo = products.length-i;
         productDetails.productId = products[i]._id;

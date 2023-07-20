@@ -53,13 +53,25 @@ const NavLoggedIn = () => {
 				</form>
         <h1>
           <a href="/" style={{ textDecoration: "none", color: "inherit" }}>
-            <img
+            <h1 style={{ width:'200px', height: '100px', marginTop:'60px', fontSize:'40px'}}>
+              Bidding<sub>.com</sub>
+            </h1>
+            
+            {/* <img
+              src="./hammer_icon.png"
+              alt={"website icon"}
+              width={"90px"}
+              height={"90px"}
+              style={{ marginTop: "10px", marginBottom:"10px" }}
+            /> */}
+
+            {/* <img
               src="./website_icon.png"
               alt={"website icon"}
               width={"200px"}
               height={"100px"}
               style={{ marginTop: "10px" }}
-            />
+            /> */}
           </a>
         </h1>
       </nav>

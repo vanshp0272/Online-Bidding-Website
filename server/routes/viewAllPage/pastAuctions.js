@@ -13,7 +13,7 @@ router.get("/", async (req, res) => {
       }
       const products=await Product.find({_id : productIds});
       var responseData=[];
-      for(var i=length-1;i>=0;i--){
+      for(var i=products.length-1;i>=0;i--){
         var productDetails = {}; // this will hold a single object
         productDetails.SNo = products.length-i;
         productDetails.productId = products[i]._id;
